@@ -1,0 +1,37 @@
+h1. Description
+
+This are my vim configuration files and plugins.
+
+h1. Installation
+
+Clone this repository to your home as .vim
+
+<pre>
+<code>
+git clone git://github.com/codedreality/vim-config.git ~/.vim
+</code>
+</pre>
+
+Switch to your .vim directory
+
+<pre>
+<code>
+cd ~/.vim
+</code>
+</pre>
+
+Get the submodules
+
+<pre>
+<code>
+git submodule updae --init
+</code>
+</pre>
+
+Link your .vimrc to the package vimrc
+
+<pre>
+<code>
+ln -s vimrc ~/.vimrc
+</code>
+</pre>
