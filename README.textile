@@ -24,7 +24,7 @@ Get the submodules
 
 <pre>
 <code>
-git submodule updae --init
+git submodule update --init
 </code>
 </pre>
 

@@ -5,7 +5,14 @@ call pathogen#runtime_append_all_bundles()
 " Common
 set nocompatible 	"use vim settings
 set number		"show line numbers
-set statusline=[%n]\ %<%f\ %{rvm#statusline()}\ %m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}	"show tail of the filename in the statusline
+
+" rvm is not available under windows os
+if has('win32') || has('win64')
+  set statusline=[%n]\ %<%f\ %m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}
+else
+  set statusline=[%n]\ %<%f\ %{rvm#statusline()}\ %m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}	
+endif
+
 set laststatus=2	"show status line
 set guioptions-=T	"turn of toolbar
 syntax on		"turn on syntax highlighting
