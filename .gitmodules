@@ -30,10 +30,6 @@
 	path = bundle/xmledit
 	url = git://github.com/sukima/xmledit.git
   ignore = dirty
-[submodule "bundle/vim-rvm"]
-	path = bundle/vim-rvm
-  url = git://github.com/tpope/vim-rvm.git
-  ignore = dirty
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
   url = git://github.com/vim-ruby/vim-ruby.git
