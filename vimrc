@@ -10,7 +10,7 @@ set number		"show line numbers
 if has('win32') || has('win64')
   set statusline=[%n]\ %<%f\ %m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 else
-  set statusline=[%n]\ %<%f\ %{rvm#statusline()}\ %m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}	
+  set statusline=[%n]\ %<%f\ %m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}	
 endif
 
 set laststatus=2	"show status line
