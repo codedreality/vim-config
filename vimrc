@@ -19,6 +19,10 @@ set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 
+set completeopt+=longest
+
+set t_Co=256
+
 " theme
 colorscheme molokai 
 
